@@ -57,3 +57,36 @@ make      # (or nmake / mingw32-make on Windows)
 
 # Run the application
 ./dashboard # or dashboard.exe on Windows
+📂 Project Structure
+text
+Dashboard/
+├── main.cpp                 # Application entry point
+├── main.qml                 # Main window, sidebar layout & StackView
+├── dashboard.pro            # qmake configuration (includes QT += charts)
+├── qml.qrc                  # QML resources
+│
+├── component/               # Reusable UI components
+│   └── ButtonStyle.qml      # Custom styled button
+│
+├── themes/                  # Theming files
+│   ├── Colors.qml           # Color palette definitions
+│   └── PurpleTheme.qml      # Main theme configuration
+│
+├── Views (Pages)/
+│   ├── Dashboard1.qml       # Dashboard view 1
+│   ├── Dashboard2.qml       # Dashboard view 2
+│   ├── Dashboard3.qml       # Dashboard view 3
+│   ├── Dashboard4.qml       # Dashboard view 4 (Default initial view)
+│   ├── ReportsPage.qml      # Reports view
+│   └── SettingsPage.qml     # Settings view
+│
+├── Model/                   # Data models/logic
+├── fonts/                   # Custom fonts (e.g., FamiljenGrotesk)
+├── images/                  # Application icons and images
+└── sample/                  # Sample images/data
+👤 Author
+Zahra Mokhtari
+GitHub: @mokhtarizahra
+
+📄 License
+This project is provided under the terms included in the LICENSE file.
